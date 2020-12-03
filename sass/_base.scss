@@ -1,0 +1,30 @@
+:root{
+    --color-primary:#FD665E;
+    --grey-primary:#f7f7f7;
+--font-primary:  'Playfair Display', serif;
+--font-secondary:   'Source Serif Pro', serif; 
+--grey-dark-3:#777;
+
+
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+}
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+body{
+    font-family: var(--font-secondary); 
+    font-weight: 400;
+    line-height: 1.6;
+    }

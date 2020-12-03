@@ -1,0 +1,299 @@
+  @mixin arrow-entity {
+    content: "\2192"; 
+}
+
+@function arrow-right($color) {
+     @return $color;
+}
+
+@mixin btn-arrow {
+    &-btn::after{
+       
+        color: arrow-right(#000);
+        @include arrow-entity;
+    }
+}
+.nav{
+     display: flex;
+     list-style-type: none;
+
+    &__item{
+        margin: 0 1.5rem;
+        font-size: 1.4rem;
+        font-weight: 400;
+        cursor: pointer;
+    }
+
+    &__item:hover{
+        border-bottom: 2px solid var(--color-primary);
+    }
+}
+
+.logo{
+    color:var(--color-primary);
+    font-weight: 700;
+}
+.btn-1{
+    background-color: white;
+    outline: 1px solid var(--color-primary);
+     font-weight: 300;
+    border: none;
+    text-align: center;
+    font-family: var(--font-primary); 
+    
+    height: 4.7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-primary);
+    font-size: 1.8rem;
+    width: 19rem;
+}
+
+@mixin image-responsive {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.house-intro{
+
+    &__photo{
+        @include image-responsive;
+
+    }
+    &__details{
+        flex: 1;
+        align-self: center;
+
+        &-heading{
+             
+        }
+        &-info{
+            margin-top: 3rem;
+            margin-bottom: 4rem;
+        }
+    }
+    &__item{
+        
+        flex: 1;
+    }
+}
+.house-value{
+ 
+
+    &__gallary{
+    display: flex;
+        
+    height: 65vh;
+    margin-top: 4rem;
+    margin-bottom: 10rem;
+
+    
+    }
+    &__item{
+        &:not(:last-child){
+            
+        margin-right: 3rem;
+        }
+
+    }
+    &__photo{
+        height: 100%;
+        width: 100%; 
+        object-fit: cover;
+    }
+}
+
+.about{
+
+    &__gallary{
+        flex: 1;
+        display: flex;
+
+        &-1{
+            width: 100%;
+            height: 100%;
+        }
+        &__left{
+        
+        align-self: center;
+
+        }    
+
+        &__right{
+            display: flex;
+            flex-direction: column;
+            margin-left: 3rem;
+            justify-content: space-around;
+             margin-top: 2rem;
+
+            &-1{
+                
+                 
+                width: 80%; 
+             }
+
+            &-2{ 
+               
+
+                width: 80%; 
+            }
+         
+    }
+
+    
+    
+    }
+
+    
+    &__details{
+        flex: 1;
+        align-self: center;
+    }
+
+    
+    &-heading{
+        font-size: 3.4rem !important;
+    }
+    &-btn{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        color: black;
+    }
+ 
+    
+    &-btn::after{
+       
+        color: arrow-right(#000);
+        @include arrow-entity;
+    }
+}
+ 
+
+.house-assured{
+
+    &__photo{
+        @include image-responsive;
+
+    }
+
+    &__item{
+        flex: 1;
+        padding-left: 5rem;
+    }
+
+    &__details{
+        flex: 1;
+        align-self: center;
+    }
+
+    &-btn{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        color: black;
+        background-color: var(--color-primary);
+    }
+ 
+    
+    &-btn::after{
+       
+        color: arrow-right(#000);
+        @include arrow-entity;
+    }
+}
+
+.blog{
+
+    &-arrow{
+
+        &__1::before{
+            content: "\2190"; 
+            font-size: 3rem;
+            margin-right: 5rem;
+
+        }
+        &__2{
+
+            font-size: 3rem;
+         }
+        &__2::after{
+            @include arrow-entity;
+            background-color: var(--grey-primary);
+             color: var(--color-primary);
+            padding: 1.2rem;
+            border-radius: 1rem; 
+          }
+    }
+
+    &-item{
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+
+        &:not(:last-child){
+            margin-right: 3rem;
+        }
+        &__photo{
+            width: 100%;
+            object-fit: cover;
+            height: 50vh;
+            
+          }
+    }
+    &-info{
+        font-weight: 200;
+        display: flex;
+        align-items: center;
+         font-family: var(--font-secondary);
+        font-size: 1.4rem;
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+
+        &>*:not(:last-child){
+            padding-right: .5rem;
+        }
+    }
+
+    &-comment{
+
+    }
+    &-likes{ 
+    }
+   
+    &-title{
+        font-family: var(--font-secondary);
+        margin-bottom: .5rem;
+        font-weight: 600;
+
+    }
+    &-subtitle{
+        font-family: var(--font-secondary);
+        font-size: 1.38rem;
+        margin-bottom: 1rem;
+    }
+    &-readmore{
+        color: var(--color-primary);
+        font-size: 1.5rem;
+        font-weight: 500;
+    }
+  
+    &-icon {
+         width: 2rem;
+         font-weight: 900;
+        height: 1.6rem;
+        align-self: center;
+        padding-top: .5rem;
+         fill:  var(--color-primary);
+      }
+      
+}
+.footer{
+    &-nav{
+      color: var(--grey-dark-3);   
+    }
+
+}
+

@@ -1,0 +1,70 @@
+.container{
+    margin: 2rem 0 0 0;
+}
+.header{
+    margin: 0 10rem 0 12rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.house{
+    margin-top: 2rem;
+    margin-left: 12rem;
+    font-family: var(--font-primary); 
+ }
+@mixin layout-display  {
+    display: flex;
+    height: 70vh;
+    margin-bottom: 5rem;
+}
+.house-intro{
+   
+    @include layout-display;
+
+ }
+ .about{
+     background-color: var(--color-primary);
+     height: 64vh;
+     margin-right: 10rem;
+     overflow: hidden;
+     padding-left: 5rem;
+     display: flex; 
+     margin-bottom: 7rem;
+ }
+
+ .house-assured{
+    @include layout-display;
+    margin-right: 10rem;
+ 
+
+
+ }
+.blog{
+     
+    margin-bottom: 10rem;
+
+    margin-right: 10rem;
+ 
+}
+ .blog-heading{
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+ 
+ }
+ .blog-list{
+     display: flex;
+      margin-top: 5rem;
+     justify-content: start;
+ }
+ .footer{
+    padding: 0 10rem 0 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    font-family: var(--font-primary);
+    overflow: hidden;
+     height: 34vh;
+      background-color: var(--grey-primary);
+ }
