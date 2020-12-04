@@ -19,8 +19,11 @@
 
     &__item{
         margin: 0 1.5rem;
-        font-size: 1.4rem;
-        font-weight: 400;
+        color: #696969;
+        font-size: 1.5rem;
+        letter-spacing: .1rem;
+        font-family: var(--font-secondary);
+        font-weight: 600;
         cursor: pointer;
     }
 
@@ -297,3 +300,88 @@
 
 }
 
+.testimony{
+
+    &-heading{
+        display: flex;
+        overflow: hidden;
+        height: 15vh;
+        align-items: center;
+ 
+        &__qoute{
+            color: var(--color-primary);
+             font-size: 14rem;
+            font-weight: 900;
+            margin-top: 1rem;
+             align-self: center;
+            line-height: .5rem;
+            font-family: var(--font-primary);
+        }
+        &__heading{
+            flex: 1;
+            font-family: var(--font-secondary);
+            display: flex;
+            font-size: 3.5rem !important;
+            justify-content: center;
+        }
+    }
+    &-content{
+        display: flex;
+        justify-content: space-between;
+        &__story{
+            text-align: center;
+              flex-basis: 75%;
+              font-size: 1.7rem;
+              font-family: var(--font-secondary);
+              font-weight: 400;
+        }
+        &__arrow{
+            flex: 2;
+            &--1{
+                display: flex;
+                justify-content: end;
+                align-items: center;
+            }
+        }
+    }
+    &-end{
+        display: flex;
+        overflow: hidden;
+        height: 8vh;
+          justify-content: center;
+         &__qoute{
+            color: var(--color-primary);
+             font-size: 14rem;
+            font-weight: 900;
+            margin-top: 3rem;
+            margin-right: 10rem;
+
+             align-self: center;
+            line-height: .5rem;
+            font-family: var(--font-primary);
+        }
+        &__heading{
+             flex: 2;
+            display: flex;
+            padding-left: 25rem;
+             text-align: center;
+            justify-content: center;
+
+        }
+        &__company{
+            font-family: var(--font-secondary);
+            font-weight: 800;
+            display: flex;
+            align-items: center;
+            font-size: 1.8rem;
+            &-name{
+                font-weight: 300;
+                font-family: var(--font-secondary);
+                align-self: center;
+                padding-left: .2rem;
+                font-size: 1.5rem;
+            }
+        }
+
+    }
+}

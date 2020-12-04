@@ -35,7 +35,8 @@
  .house-assured{
     @include layout-display;
     margin-right: 10rem;
- 
+    margin-bottom: 10rem;
+
 
 
  }
@@ -68,3 +69,11 @@
      height: 34vh;
       background-color: var(--grey-primary);
  }
+
+.testimony{
+    display: flex;
+    flex-direction: column;
+    margin-right: 10rem;
+    margin-bottom: 10rem;
+
+}
