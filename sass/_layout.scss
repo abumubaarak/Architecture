@@ -1,41 +1,136 @@
 .container{
     margin: 2rem 0 0 0;
+    
 }
 .header{
     margin: 0 10rem 0 12rem;
     display: flex;
     align-items: center;
+    overflow: hidden;
     justify-content: space-between;
+
+
+    
+
+    @media only screen and (max-width: $init-bp){
+        //flex-direction:column;
+        margin: 0 1rem 0 4rem;
+    }
+
+    @media only screen and (max-width: $small-bp){
+        //flex-direction:column;
+        margin: 0 0 0 4rem;
+    }
+
+    
+
+
+    &-nav{
+        
+        @media only screen and (max-width: $first-bp){
+           display: none;
+        }
+        
+    }
+    &-toggle{
+        display: none;
+
+        @media only screen and (max-width: $first-bp){
+           
+            display: flex;
+            margin-right: 4rem;
+
+        }
+    }
+
+    
 }
 .house{
     margin-top: 2rem;
     margin-left: 12rem;
-    font-family: var(--font-primary); 
+    font-family: var(--font-primary);
+    
+    @media only screen and (max-width: $init-bp){
+        //flex-direction:column;
+        margin: 2rem 1rem 0 4rem;
+    } 
+
+    @media only screen and (max-width: $first-bp){
+        //flex-direction:column;
+        margin-left: 2rem;
+        margin-top: 0;
+    }
+
+    @media only screen and (max-width: $small-bp){
+        //flex-direction:column;
+        margin: 0 5rem 0 4rem;
+    }
+
+    
  }
 @mixin layout-display  {
     display: flex;
     height: 70vh;
     margin-bottom: 5rem;
+
+    @media only screen and (max-width: $first-bp){
+        margin-bottom: 3rem;
+        height: 35vh;
+
+}
+ @media only screen and (max-width: $small-bp){
+     height: 35vh;
+     margin-bottom: 0;
+
+}
 }
 .house-intro{
    
     @include layout-display;
 
+    @media only screen and (max-width: $small-bp){
+        flex-direction: column;
+        margin-bottom: 3rem;
+        justify-content: center;
+         align-items: center;
+        height: 30vh;
+
+}
  }
- .about{
+
+  .about{
      background-color: var(--color-primary);
-     height: 64vh;
-     margin-right: 10rem;
+      margin-right: 10rem;
      overflow: hidden;
      padding-left: 5rem;
      display: flex; 
      margin-bottom: 7rem;
+
+     @media only screen and (max-width: $first-bp){
+         flex-direction: column;
+         align-items: center;
+         width: 100%;
+         margin-right: 2rem;
+     }
  }
 
  .house-assured{
     @include layout-display;
     margin-right: 10rem;
     margin-bottom: 10rem;
+    @media only screen and (max-width: $first-bp){
+    
+       margin-right: 2rem;
+   }
+
+   @media only screen and (max-width: $small-bp){
+    flex-direction: column;
+    margin-bottom: 5rem;
+    justify-content: center;
+     align-items: center;
+    height: 15vh;
+
+}
 
 
 
@@ -45,6 +140,12 @@
     margin-bottom: 10rem;
 
     margin-right: 10rem;
+
+    @media only screen and (max-width: $first-bp){
+    
+        margin-right: 2rem;
+    }
+     
  
 }
  .blog-heading{
@@ -57,6 +158,11 @@
      display: flex;
       margin-top: 5rem;
      justify-content: start;
+
+     @media only screen and (max-width: $blog-only-bp){
+    
+       flex-direction: column;
+    }
  }
  .footer{
     padding: 0 10rem 0 10rem;
@@ -68,6 +174,18 @@
     overflow: hidden;
      height: 34vh;
       background-color: var(--grey-primary);
+
+      @media only screen and (max-width: $first-bp){
+          flex-direction: column;
+          justify-content: initial;
+          padding-top: 3rem;
+          height: 15vh;
+     }
+     @media only screen and (max-width: $small-bp){
+        padding: 3rem 1rem 0 1rem;
+
+   }
+    
  }
 
 .testimony{
@@ -76,4 +194,9 @@
     margin-right: 10rem;
     margin-bottom: 10rem;
 
+    @media only screen and (max-width: $first-bp){
+        margin-top: 6rem;
+        margin-right: 2rem;
+        margin-bottom: 2rem;
+    }
 }

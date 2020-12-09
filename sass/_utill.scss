@@ -2,13 +2,44 @@
     font-size: 5.9rem;
     line-height: 5.7rem;
      font-weight: 700;
+     @media only screen and (max-width: $first-bp){
+        font-size: 3.5rem;
+        line-height: 4rem;
+
+     }
+
+     @media only screen and (max-width: $small-bp){
+        font-size: 2.8rem;
+        line-height: 3.2rem;
+
+     }
+
+     @media only screen and (max-width: $smallest-bp){
+        font-size: 2rem;
+        line-height: 2.6rem;
+        margin-top: 3rem;
+
+     }
+
+
+      
+
+     
  }
+
+.p-h{
+    @media only screen and (max-width: $small-bp){
+       display: none;
+
+     } 
+}
 
 .p-1{
     font-size: 1.35rem;
     line-height: 2rem;
     font-weight: 400;
  
+    
      
 }
 .r-d{

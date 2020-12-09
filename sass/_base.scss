@@ -5,9 +5,17 @@
 --font-secondary:   'Source Serif Pro', serif; 
 --grey-dark-3:#777;
 --grey-dark-2:#d1d1d1;
-
-
+ 
 }
+
+$init-bp:69.25em;
+$first-bp:57.375em;
+$blog-only-bp:44.5625em;
+$medium-bp:40.8125em;
+$small-bp:30.06em;
+$smallest-bp:18.125em;
+
+
 
 *{
     padding: 0;
@@ -22,6 +30,19 @@
 html{
     box-sizing: border-box;
     font-size: 62.5%;
+
+    @media only screen and (max-width: $first-bp){
+        font-size: 55.5%;
+    }
+    @media only screen and (max-width: $medium-bp){
+        font-size: 50.5%;
+    }
+
+    @media only screen and (max-width: $small-bp){
+        font-size: 49.5%;
+
+
+     }
 }
 
 body{
