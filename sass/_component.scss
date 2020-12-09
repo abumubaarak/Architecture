@@ -103,8 +103,7 @@
 
     &__photo{
         @include image-responsive; 
-         transition: filter 0.9s;
-
+  
          @media only screen and (max-width: $first-bp){
             height: 50%;
 
@@ -123,8 +122,7 @@
    }
         &-heading{
              width: 68%;
-             animation: moveIn .3s ease-in-out;
-
+ 
              @media only screen and (max-width: $init-bp){
                 width: 90%;
              }
