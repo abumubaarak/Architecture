@@ -222,11 +222,19 @@ body {
   color: var(--color-primary);
   font-weight: 700; }
 
+.btn-1:hover {
+  background-position: 100%;
+  color: white; }
+
 .btn-1 {
   background-color: white;
   outline: 1px solid var(--color-primary);
   font-weight: 300;
+  background-image: linear-gradient(120deg, transparent 0%, transparent 50%, #ce1111 50%);
+  transition: all .3s;
   border: none;
+  background-size: 220%;
+  cursor: pointer;
   text-align: center;
   font-family: var(--font-primary);
   height: 4.7rem;
@@ -534,6 +542,10 @@ body {
     align-self: center;
     line-height: .5rem;
     font-family: var(--font-primary); }
+    @media only screen and (max-width: 30.06em) {
+      .testimony-heading__qoute {
+        font-size: 6rem;
+        margin-top: 1rem; } }
   .testimony-heading__heading {
     flex: 1;
     font-family: var(--font-secondary);
@@ -572,6 +584,10 @@ body {
     align-self: center;
     line-height: .5rem;
     font-family: var(--font-primary); }
+    @media only screen and (max-width: 30.06em) {
+      .testimony-end__qoute {
+        font-size: 6rem;
+        margin-top: 1rem; } }
   .testimony-end__heading {
     flex: 2;
     display: flex;
